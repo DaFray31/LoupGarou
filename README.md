@@ -1,5 +1,10 @@
 
+##Portage vers 1.16.4
+Je tente actuellement de modifier le plugin pour le porter à une version supérieur (1.16.4)
 
+**/!\ Je ne conseille pas d'utiliser encore ceci**
+
+Voir les TODO pour les modifications à faire / corriger
 
   
 
