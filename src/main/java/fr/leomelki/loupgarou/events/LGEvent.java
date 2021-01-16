@@ -13,10 +13,6 @@ public class LGEvent extends Event{
 	
     private static final HandlerList handlers = new HandlerList();
 
-	public LGEvent(LGGame game) {
-		this.game = game;
-	}
-
 	@Override
 	public HandlerList getHandlers() {
 		return handlers;

@@ -13,7 +13,4 @@ public enum LGCustomSkin {
 	@Getter private final WrappedSignedProperty property;
 
 
-	LGCustomSkin(WrappedSignedProperty property) {
-		this.property = property;
-	}
 }

@@ -19,7 +19,4 @@ public enum LGWinType {
 	
 	@Getter private final String message;
 
-	LGWinType(String message) {
-		this.message = message;
-	}
 }

@@ -75,9 +75,6 @@ public class LGCustomItems {
 		DEAD("mort");
 		@Getter private final String name;
 
-		LGCustomItemsConstraints(String name) {
-			this.name = name;
-		}
 	}
 	
 }

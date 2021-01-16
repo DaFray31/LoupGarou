@@ -57,9 +57,6 @@ public class LGPlayerKilledEvent extends LGEvent implements Cancellable{
 
 		@Getter private final String message;
 
-		Reason(String message) {
-			this.message = message;
-		}
 	}
 	
 }
