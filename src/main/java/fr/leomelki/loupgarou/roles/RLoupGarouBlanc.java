@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.roles;
+package main.java.fr.leomelki.loupgarou.roles;
 
 import java.util.Arrays;
 
@@ -10,13 +10,13 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.classes.LGPlayer.LGChooseCallback;
-import fr.leomelki.loupgarou.classes.LGWinType;
-import fr.leomelki.loupgarou.events.LGEndCheckEvent;
-import fr.leomelki.loupgarou.events.LGGameEndEvent;
-import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer.LGChooseCallback;
+import main.java.fr.leomelki.loupgarou.classes.LGWinType;
+import main.java.fr.leomelki.loupgarou.events.LGEndCheckEvent;
+import main.java.fr.leomelki.loupgarou.events.LGGameEndEvent;
+import main.java.fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
 
 public class RLoupGarouBlanc extends Role{
 	private static ItemStack skip;

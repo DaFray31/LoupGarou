@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.classes;
+package main.java.fr.leomelki.loupgarou.classes;
 
 import org.bukkit.Sound;
 

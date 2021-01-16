@@ -16,15 +16,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package fr.leomelki.com.comphenix.packetwrapper;
-
-import java.util.Arrays;
+package main.java.fr.leomelki.com.comphenix.packetwrapper;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.EnumWrappers.ChatType;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
+
+import java.util.Arrays;
 
 public class WrapperPlayServerChat extends AbstractPacket {
 	public static final PacketType TYPE = PacketType.Play.Server.CHAT;

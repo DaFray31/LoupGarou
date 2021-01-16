@@ -1,15 +1,14 @@
-package fr.leomelki.loupgarou.utils;
-
-import java.lang.reflect.InvocationTargetException;
-
-import org.bukkit.Location;
-import org.bukkit.WorldBorder;
-import org.bukkit.entity.Player;
+package main.java.fr.leomelki.loupgarou.utils;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers;
+import org.bukkit.Location;
+import org.bukkit.WorldBorder;
+import org.bukkit.entity.Player;
+
+import java.lang.reflect.InvocationTargetException;
 
 public class VariousUtils {
 	public static double distanceSquaredXZ(Location from, Location to) {

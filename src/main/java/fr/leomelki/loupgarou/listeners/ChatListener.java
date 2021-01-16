@@ -1,11 +1,11 @@
-package fr.leomelki.loupgarou.listeners;
+package main.java.fr.leomelki.loupgarou.listeners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
-import fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
 
 public class ChatListener implements Listener{
 	@EventHandler(priority = EventPriority.HIGHEST)

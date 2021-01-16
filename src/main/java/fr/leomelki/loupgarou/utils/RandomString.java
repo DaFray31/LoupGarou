@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.utils;
+package main.java.fr.leomelki.loupgarou.utils;
 
 import java.security.SecureRandom;
 

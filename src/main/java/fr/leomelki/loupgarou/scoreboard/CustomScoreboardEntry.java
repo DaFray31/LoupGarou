@@ -1,15 +1,14 @@
-package fr.leomelki.loupgarou.scoreboard;
-
-import java.util.Arrays;
+package main.java.fr.leomelki.loupgarou.scoreboard;
 
 import com.comphenix.protocol.wrappers.EnumWrappers.ScoreboardAction;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
-
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardScore;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
-import fr.leomelki.loupgarou.utils.VariousUtils;
 import lombok.Getter;
 import lombok.Setter;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardScore;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
+import main.java.fr.leomelki.loupgarou.utils.VariousUtils;
+
+import java.util.Arrays;
 
 public class CustomScoreboardEntry {
 	private static WrappedChatComponent nullComponent = WrappedChatComponent.fromText("");

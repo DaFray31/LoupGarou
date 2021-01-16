@@ -1,10 +1,10 @@
-package fr.leomelki.loupgarou.events;
+package main.java.fr.leomelki.loupgarou.events;
 
 import java.util.ArrayList;
 
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.classes.LGVote;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGVote;
 import lombok.Getter;
 
 public class LGVoteLeaderChange extends LGEvent{

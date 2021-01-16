@@ -1,6 +1,6 @@
-package fr.leomelki.loupgarou.events;
+package main.java.fr.leomelki.loupgarou.events;
 
-import fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
 
 public class LGDayEndEvent extends LGEvent{
 	public LGDayEndEvent(LGGame game) {

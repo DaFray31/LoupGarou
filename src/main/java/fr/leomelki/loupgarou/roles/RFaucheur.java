@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.roles;
+package main.java.fr.leomelki.loupgarou.roles;
 
 import java.util.List;
 import java.util.Random;
@@ -7,11 +7,11 @@ import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 
-import fr.leomelki.loupgarou.MainLg;
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.events.LGPlayerKilledEvent;
-import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
+import main.java.fr.leomelki.loupgarou.MainLg;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.events.LGPlayerKilledEvent;
+import main.java.fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
 
 public class RFaucheur extends Role{
 	public RFaucheur(LGGame game) {

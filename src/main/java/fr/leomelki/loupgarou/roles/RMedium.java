@@ -1,13 +1,13 @@
-package fr.leomelki.loupgarou.roles;
+package main.java.fr.leomelki.loupgarou.roles;
 
 import org.bukkit.event.EventHandler;
 
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.classes.chat.LGChat;
-import fr.leomelki.loupgarou.events.LGDayEndEvent;
-import fr.leomelki.loupgarou.events.LGPreDayStartEvent;
-import fr.leomelki.loupgarou.events.LGRoleTurnEndEvent;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.chat.LGChat;
+import main.java.fr.leomelki.loupgarou.events.LGDayEndEvent;
+import main.java.fr.leomelki.loupgarou.events.LGPreDayStartEvent;
+import main.java.fr.leomelki.loupgarou.events.LGRoleTurnEndEvent;
 
 public class RMedium extends Role{
 	public RMedium(LGGame game) {

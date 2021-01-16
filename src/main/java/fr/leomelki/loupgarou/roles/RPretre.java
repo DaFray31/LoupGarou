@@ -1,11 +1,11 @@
-package fr.leomelki.loupgarou.roles;
+package main.java.fr.leomelki.loupgarou.roles;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_15_R1.inventory.CraftInventoryCustom;
+import org.bukkit.craftbukkit.v1_16_R3.inventory.CraftInventoryCustom;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -22,15 +22,15 @@ import com.comphenix.protocol.wrappers.WrappedDataWatcher;
 import com.comphenix.protocol.wrappers.WrappedDataWatcher.WrappedDataWatcherObject;
 import com.comphenix.protocol.wrappers.WrappedWatchableObject;
 
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityMetadata;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerHeldItemSlot;
-import fr.leomelki.loupgarou.MainLg;
-import fr.leomelki.loupgarou.classes.LGCustomItems;
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.classes.LGPlayer.LGChooseCallback;
-import fr.leomelki.loupgarou.events.LGPreDayStartEvent;
-import fr.leomelki.loupgarou.utils.VariousUtils;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityMetadata;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerHeldItemSlot;
+import main.java.fr.leomelki.loupgarou.MainLg;
+import main.java.fr.leomelki.loupgarou.classes.LGCustomItems;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer.LGChooseCallback;
+import main.java.fr.leomelki.loupgarou.events.LGPreDayStartEvent;
+import main.java.fr.leomelki.loupgarou.utils.VariousUtils;
 
 public class RPretre extends Role{
 	static ItemStack[] items = new ItemStack[9];

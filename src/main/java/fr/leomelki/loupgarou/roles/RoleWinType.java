@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.roles;
+package main.java.fr.leomelki.loupgarou.roles;
 
 public enum RoleWinType {
 	SEUL,

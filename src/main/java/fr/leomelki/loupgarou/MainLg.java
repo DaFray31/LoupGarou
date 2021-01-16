@@ -1,18 +1,26 @@
-package fr.leomelki.loupgarou;
+package main.java.fr.leomelki.loupgarou;
 
 
-import java.io.File;
-import java.lang.reflect.Constructor;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.Sound;
+import com.comphenix.protocol.PacketType;
+import com.comphenix.protocol.ProtocolLibrary;
+import com.comphenix.protocol.ProtocolManager;
+import com.comphenix.protocol.events.ListenerPriority;
+import com.comphenix.protocol.events.PacketAdapter;
+import com.comphenix.protocol.events.PacketEvent;
+import com.comphenix.protocol.wrappers.EnumWrappers.ItemSlot;
+import com.comphenix.protocol.wrappers.PlayerInfoData;
+import com.comphenix.protocol.wrappers.WrappedChatComponent;
+import lombok.Getter;
+import lombok.Setter;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.*;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGWinType;
+import main.java.fr.leomelki.loupgarou.events.LGSkinLoadEvent;
+import main.java.fr.leomelki.loupgarou.events.LGUpdatePrefixEvent;
+import main.java.fr.leomelki.loupgarou.listeners.*;
+import main.java.fr.leomelki.loupgarou.roles.*;
+import org.bukkit.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -25,65 +33,12 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import com.comphenix.protocol.PacketType;
-import com.comphenix.protocol.ProtocolLibrary;
-import com.comphenix.protocol.ProtocolManager;
-import com.comphenix.protocol.events.ListenerPriority;
-import com.comphenix.protocol.events.PacketAdapter;
-import com.comphenix.protocol.events.PacketEvent;
-import com.comphenix.protocol.wrappers.EnumWrappers.ItemSlot;
-import com.comphenix.protocol.wrappers.PlayerInfoData;
-import com.comphenix.protocol.wrappers.WrappedChatComponent;
-
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityEquipment;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerNamedSoundEffect;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerPlayerInfo;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerUpdateHealth;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerUpdateTime;
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.classes.LGWinType;
-import fr.leomelki.loupgarou.events.LGSkinLoadEvent;
-import fr.leomelki.loupgarou.events.LGUpdatePrefixEvent;
-import fr.leomelki.loupgarou.listeners.CancelListener;
-import fr.leomelki.loupgarou.listeners.ChatListener;
-import fr.leomelki.loupgarou.listeners.JoinListener;
-import fr.leomelki.loupgarou.listeners.LoupGarouListener;
-import fr.leomelki.loupgarou.listeners.VoteListener;
-import fr.leomelki.loupgarou.roles.RAnge;
-import fr.leomelki.loupgarou.roles.RAssassin;
-import fr.leomelki.loupgarou.roles.RBouffon;
-import fr.leomelki.loupgarou.roles.RChaperonRouge;
-import fr.leomelki.loupgarou.roles.RChasseur;
-import fr.leomelki.loupgarou.roles.RChasseurDeVampire;
-import fr.leomelki.loupgarou.roles.RChienLoup;
-import fr.leomelki.loupgarou.roles.RCorbeau;
-import fr.leomelki.loupgarou.roles.RCupidon;
-import fr.leomelki.loupgarou.roles.RDetective;
-import fr.leomelki.loupgarou.roles.RDictateur;
-import fr.leomelki.loupgarou.roles.REnfantSauvage;
-import fr.leomelki.loupgarou.roles.RFaucheur;
-import fr.leomelki.loupgarou.roles.RGarde;
-import fr.leomelki.loupgarou.roles.RGrandMechantLoup;
-import fr.leomelki.loupgarou.roles.RLoupGarou;
-import fr.leomelki.loupgarou.roles.RLoupGarouBlanc;
-import fr.leomelki.loupgarou.roles.RLoupGarouNoir;
-import fr.leomelki.loupgarou.roles.RMedium;
-import fr.leomelki.loupgarou.roles.RMontreurDOurs;
-import fr.leomelki.loupgarou.roles.RPetiteFille;
-import fr.leomelki.loupgarou.roles.RPirate;
-import fr.leomelki.loupgarou.roles.RPretre;
-import fr.leomelki.loupgarou.roles.RPyromane;
-import fr.leomelki.loupgarou.roles.RSorciere;
-import fr.leomelki.loupgarou.roles.RSurvivant;
-import fr.leomelki.loupgarou.roles.RVampire;
-import fr.leomelki.loupgarou.roles.RVillageois;
-import fr.leomelki.loupgarou.roles.RVoyante;
-import fr.leomelki.loupgarou.roles.Role;
-import fr.leomelki.loupgarou.utils.VariousUtils;
-import lombok.Getter;
-import lombok.Setter;
+import java.io.File;
+import java.lang.reflect.Constructor;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 public class MainLg extends JavaPlugin{
 	private static MainLg instance;
@@ -91,7 +46,8 @@ public class MainLg extends JavaPlugin{
 	@Getter private static String prefix = ""/*"§7[§9Loup-Garou§7] "*/;
 	
 	@Getter @Setter private LGGame currentGame;//Because for now, only one game will be playable on one server (flemme)
-	
+
+
 	@Override
 	public void onEnable() {
 		instance = this;

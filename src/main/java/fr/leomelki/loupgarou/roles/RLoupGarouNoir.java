@@ -1,10 +1,17 @@
-package fr.leomelki.loupgarou.roles;
+package main.java.fr.leomelki.loupgarou.roles;
 
-import java.util.Arrays;
-
+import main.java.fr.leomelki.loupgarou.MainLg;
+import main.java.fr.leomelki.loupgarou.classes.LGCustomItems;
+import main.java.fr.leomelki.loupgarou.classes.LGCustomItems.LGCustomItemsConstraints;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGVote;
+import main.java.fr.leomelki.loupgarou.events.LGCustomItemChangeEvent;
+import main.java.fr.leomelki.loupgarou.events.LGNightEndEvent;
+import main.java.fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_15_R1.inventory.CraftInventoryCustom;
+import org.bukkit.craftbukkit.v1_16_R3.inventory.CraftInventoryCustom;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -15,15 +22,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import fr.leomelki.loupgarou.MainLg;
-import fr.leomelki.loupgarou.classes.LGCustomItems;
-import fr.leomelki.loupgarou.classes.LGCustomItems.LGCustomItemsConstraints;
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.classes.LGVote;
-import fr.leomelki.loupgarou.events.LGCustomItemChangeEvent;
-import fr.leomelki.loupgarou.events.LGNightEndEvent;
-import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
+import java.util.Arrays;
 
 public class RLoupGarouNoir extends Role{
 	static ItemStack[] items = new ItemStack[9];

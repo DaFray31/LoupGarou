@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.listeners;
+package main.java.fr.leomelki.loupgarou.listeners;
 
 import java.util.Arrays;
 
@@ -15,10 +15,10 @@ import org.bukkit.potion.PotionEffectType;
 
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
 
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
-import fr.leomelki.loupgarou.MainLg;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
+import main.java.fr.leomelki.loupgarou.MainLg;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
 
 public class JoinListener implements Listener{
 	

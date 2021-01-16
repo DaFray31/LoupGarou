@@ -1,6 +1,6 @@
-package fr.leomelki.loupgarou.classes.chat;
+package main.java.fr.leomelki.loupgarou.classes.chat;
 
-import fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
 
 public class LGNoChat extends LGChat{
 	public LGNoChat() {

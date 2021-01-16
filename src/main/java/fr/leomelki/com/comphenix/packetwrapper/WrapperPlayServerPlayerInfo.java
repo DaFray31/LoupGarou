@@ -16,14 +16,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package fr.leomelki.com.comphenix.packetwrapper;
-
-import java.util.List;
+package main.java.fr.leomelki.com.comphenix.packetwrapper;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers.PlayerInfoAction;
 import com.comphenix.protocol.wrappers.PlayerInfoData;
+
+import java.util.List;
 
 public class WrapperPlayServerPlayerInfo extends AbstractPacket {
 	public static final PacketType TYPE = PacketType.Play.Server.PLAYER_INFO;

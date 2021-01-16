@@ -1,9 +1,9 @@
-package fr.leomelki.loupgarou.events;
+package main.java.fr.leomelki.loupgarou.events;
 
 import org.bukkit.event.Cancellable;
 
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -19,8 +19,18 @@ public class LGPlayerKilledEvent extends LGEvent implements Cancellable{
     
     @Getter @Setter private LGPlayer killed;
     @Getter @Setter private Reason reason;
-	
-    @RequiredArgsConstructor
+
+	@Override
+	public boolean isCancelled() {
+		return false;
+	}
+
+	@Override
+	public void setCancelled(boolean b) {
+
+	}
+
+	@RequiredArgsConstructor
 	public static enum Reason{
 		LOUP_GAROU("§7§l%s§4 est mort pendant la nuit"),
 		GM_LOUP_GAROU("§7§l%s§4 est mort pendant la nuit"),
@@ -40,8 +50,16 @@ public class LGPlayerKilledEvent extends LGEvent implements Cancellable{
 		FAUCHEUR("§7§l%s§4 a égaré son âme"),
 		
 		DONT_DIE("§7§l%s§4 est mort pour rien");
-		
+
+		public String getMessage() {
+			return this.message;
+		}
+
 		@Getter private final String message;
+
+		Reason(String message) {
+			this.message = message;
+		}
 	}
 	
 }

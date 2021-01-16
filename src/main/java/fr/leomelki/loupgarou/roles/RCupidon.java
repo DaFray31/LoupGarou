@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.roles;
+package main.java.fr.leomelki.loupgarou.roles;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,22 +18,22 @@ import com.comphenix.protocol.wrappers.WrappedDataWatcher;
 import com.comphenix.protocol.wrappers.WrappedDataWatcher.WrappedDataWatcherObject;
 import com.comphenix.protocol.wrappers.WrappedWatchableObject;
 
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityDestroy;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityEquipment;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityLook;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityMetadata;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerSpawnEntityLiving;
-import fr.leomelki.loupgarou.MainLg;
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.classes.LGPlayer.LGChooseCallback;
-import fr.leomelki.loupgarou.classes.LGWinType;
-import fr.leomelki.loupgarou.events.LGEndCheckEvent;
-import fr.leomelki.loupgarou.events.LGGameEndEvent;
-import fr.leomelki.loupgarou.events.LGPlayerGotKilledEvent;
-import fr.leomelki.loupgarou.events.LGPlayerKilledEvent;
-import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
-import fr.leomelki.loupgarou.events.LGUpdatePrefixEvent;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityDestroy;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityEquipment;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityLook;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerEntityMetadata;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerSpawnEntityLiving;
+import main.java.fr.leomelki.loupgarou.MainLg;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer.LGChooseCallback;
+import main.java.fr.leomelki.loupgarou.classes.LGWinType;
+import main.java.fr.leomelki.loupgarou.events.LGEndCheckEvent;
+import main.java.fr.leomelki.loupgarou.events.LGGameEndEvent;
+import main.java.fr.leomelki.loupgarou.events.LGPlayerGotKilledEvent;
+import main.java.fr.leomelki.loupgarou.events.LGPlayerKilledEvent;
+import main.java.fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
+import main.java.fr.leomelki.loupgarou.events.LGUpdatePrefixEvent;
 
 public class RCupidon extends Role{
 	public RCupidon(LGGame game) {

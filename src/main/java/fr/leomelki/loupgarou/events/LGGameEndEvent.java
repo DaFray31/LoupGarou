@@ -1,14 +1,13 @@
-package fr.leomelki.loupgarou.events;
+package main.java.fr.leomelki.loupgarou.events;
 
-import java.util.List;
-
-import org.bukkit.event.Cancellable;
-
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.classes.LGWinType;
 import lombok.Getter;
 import lombok.Setter;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGWinType;
+import org.bukkit.event.Cancellable;
+
+import java.util.List;
 
 public class LGGameEndEvent extends LGEvent implements Cancellable{
 	@Getter @Setter private boolean cancelled;
@@ -18,5 +17,15 @@ public class LGGameEndEvent extends LGEvent implements Cancellable{
 		super(game);
 		this.winType = winType;
 		this.winners = winners;
+	}
+
+	@Override
+	public boolean isCancelled() {
+		return false;
+	}
+
+	@Override
+	public void setCancelled(boolean b) {
+
 	}
 }

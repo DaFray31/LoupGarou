@@ -1,7 +1,7 @@
-package fr.leomelki.loupgarou.events;
+package main.java.fr.leomelki.loupgarou.events;
 
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
 import lombok.Getter;
 
 public class LGGameJoinEvent extends LGEvent{

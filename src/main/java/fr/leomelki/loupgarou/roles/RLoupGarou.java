@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.roles;
+package main.java.fr.leomelki.loupgarou.roles;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,19 +7,19 @@ import java.util.Map.Entry;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
-import fr.leomelki.loupgarou.classes.LGCustomSkin;
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.classes.LGVote;
-import fr.leomelki.loupgarou.classes.LGWinType;
-import fr.leomelki.loupgarou.classes.chat.LGChat;
-import fr.leomelki.loupgarou.events.LGDayEndEvent;
-import fr.leomelki.loupgarou.events.LGGameEndEvent;
-import fr.leomelki.loupgarou.events.LGNightEndEvent;
-import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
-import fr.leomelki.loupgarou.events.LGSkinLoadEvent;
-import fr.leomelki.loupgarou.events.LGUpdatePrefixEvent;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
+import main.java.fr.leomelki.loupgarou.classes.LGCustomSkin;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGVote;
+import main.java.fr.leomelki.loupgarou.classes.LGWinType;
+import main.java.fr.leomelki.loupgarou.classes.chat.LGChat;
+import main.java.fr.leomelki.loupgarou.events.LGDayEndEvent;
+import main.java.fr.leomelki.loupgarou.events.LGGameEndEvent;
+import main.java.fr.leomelki.loupgarou.events.LGNightEndEvent;
+import main.java.fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
+import main.java.fr.leomelki.loupgarou.events.LGSkinLoadEvent;
+import main.java.fr.leomelki.loupgarou.events.LGUpdatePrefixEvent;
 import lombok.Getter;
 
 public class RLoupGarou extends Role{

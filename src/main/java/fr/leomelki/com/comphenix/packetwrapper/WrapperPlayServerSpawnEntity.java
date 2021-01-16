@@ -16,12 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package fr.leomelki.com.comphenix.packetwrapper;
-
-import java.util.UUID;
-
-import org.bukkit.World;
-import org.bukkit.entity.Entity;
+package main.java.fr.leomelki.com.comphenix.packetwrapper;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolLibrary;
@@ -29,6 +24,10 @@ import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.events.PacketEvent;
 import com.comphenix.protocol.injector.PacketConstructor;
 import com.comphenix.protocol.reflect.IntEnum;
+import org.bukkit.World;
+import org.bukkit.entity.Entity;
+
+import java.util.UUID;
 
 public class WrapperPlayServerSpawnEntity extends AbstractPacket {
 	public static final PacketType TYPE = PacketType.Play.Server.SPAWN_ENTITY;

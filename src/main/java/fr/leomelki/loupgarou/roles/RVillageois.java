@@ -1,6 +1,6 @@
-package fr.leomelki.loupgarou.roles;
+package main.java.fr.leomelki.loupgarou.roles;
 
-import fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
 
 public class RVillageois extends Role{
 	public RVillageois(LGGame game) {

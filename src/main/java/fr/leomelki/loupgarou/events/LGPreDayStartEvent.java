@@ -1,8 +1,8 @@
-package fr.leomelki.loupgarou.events;
+package main.java.fr.leomelki.loupgarou.events;
 
 import org.bukkit.event.Cancellable;
 
-import fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,4 +12,14 @@ public class LGPreDayStartEvent extends LGEvent implements Cancellable{
 	}
 	
 	@Getter @Setter private boolean cancelled;
+
+	@Override
+	public boolean isCancelled() {
+		return false;
+	}
+
+	@Override
+	public void setCancelled(boolean b) {
+
+	}
 }

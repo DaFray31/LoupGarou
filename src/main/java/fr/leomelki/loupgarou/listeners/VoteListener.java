@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.listeners;
+package main.java.fr.leomelki.loupgarou.listeners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -6,7 +6,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.PlayerAnimationEvent;
 import org.bukkit.event.player.PlayerAnimationType;
 
-import fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
 
 public class VoteListener implements Listener{
 	@EventHandler

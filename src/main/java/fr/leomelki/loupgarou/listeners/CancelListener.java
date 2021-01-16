@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.listeners;
+package main.java.fr.leomelki.loupgarou.listeners;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -14,7 +14,7 @@ import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.event.player.PlayerSwapHandItemsEvent;
 import org.bukkit.event.weather.WeatherChangeEvent;
 
-import fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
 
 public class CancelListener implements Listener{
 	@EventHandler

@@ -1,17 +1,16 @@
-package fr.leomelki.loupgarou.roles;
+package main.java.fr.leomelki.loupgarou.roles;
+
+import main.java.fr.leomelki.loupgarou.classes.LGGame;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer.LGChooseCallback;
+import main.java.fr.leomelki.loupgarou.events.LGNightPlayerPreKilledEvent;
+import main.java.fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
+import main.java.fr.leomelki.loupgarou.events.LGPreDayStartEvent;
+import main.java.fr.leomelki.loupgarou.events.LGVampiredEvent;
+import org.bukkit.event.EventHandler;
 
 import java.util.Arrays;
 import java.util.List;
-
-import org.bukkit.event.EventHandler;
-
-import fr.leomelki.loupgarou.classes.LGGame;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.classes.LGPlayer.LGChooseCallback;
-import fr.leomelki.loupgarou.events.LGNightPlayerPreKilledEvent;
-import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
-import fr.leomelki.loupgarou.events.LGPreDayStartEvent;
-import fr.leomelki.loupgarou.events.LGVampiredEvent;
 
 public class RGarde extends Role{
 	public RGarde(LGGame game) {

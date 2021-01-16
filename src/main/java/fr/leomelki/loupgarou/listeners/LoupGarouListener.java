@@ -1,13 +1,13 @@
-package fr.leomelki.loupgarou.listeners;
+package main.java.fr.leomelki.loupgarou.listeners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
 import com.comphenix.protocol.wrappers.EnumWrappers.ScoreboardAction;
 
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardScore;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
-import fr.leomelki.loupgarou.events.LGGameJoinEvent;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardScore;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
+import main.java.fr.leomelki.loupgarou.events.LGGameJoinEvent;
 
 public class LoupGarouListener implements Listener {
 	@EventHandler

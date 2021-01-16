@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.classes;
+package main.java.fr.leomelki.loupgarou.classes;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,8 +11,8 @@ import org.bukkit.inventory.ItemStack;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import fr.leomelki.loupgarou.events.LGCustomItemChangeEvent;
-import fr.leomelki.loupgarou.roles.Role;
+import main.java.fr.leomelki.loupgarou.events.LGCustomItemChangeEvent;
+import main.java.fr.leomelki.loupgarou.roles.Role;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
@@ -74,6 +74,10 @@ public class LGCustomItems {
 		VAMPIRE_INFECTE("vampire-infecte"),
 		DEAD("mort");
 		@Getter private final String name;
+
+		LGCustomItemsConstraints(String name) {
+			this.name = name;
+		}
 	}
 	
 }

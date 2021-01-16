@@ -1,4 +1,4 @@
-package fr.leomelki.loupgarou.classes;
+package main.java.fr.leomelki.loupgarou.classes;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -18,4 +18,8 @@ public enum LGWinType {
 	NONE("§4Erreur: §cpersonne n'a gagné la partie.");
 	
 	@Getter private final String message;
+
+	LGWinType(String message) {
+		this.message = message;
+	}
 }

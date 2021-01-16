@@ -1,16 +1,15 @@
-package fr.leomelki.loupgarou.scoreboard;
+package main.java.fr.leomelki.loupgarou.scoreboard;
+
+import com.comphenix.protocol.wrappers.WrappedChatComponent;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardDisplayObjective;
+import main.java.fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardObjective;
+import main.java.fr.leomelki.loupgarou.classes.LGPlayer;
+import main.java.fr.leomelki.loupgarou.utils.RandomString;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.util.Arrays;
 import java.util.List;
-
-import com.comphenix.protocol.wrappers.WrappedChatComponent;
-
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardDisplayObjective;
-import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardObjective;
-import fr.leomelki.loupgarou.classes.LGPlayer;
-import fr.leomelki.loupgarou.utils.RandomString;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class CustomScoreboard {
@@ -24,7 +23,7 @@ public class CustomScoreboard {
 																			  new CustomScoreboardEntry(0, this));
 	@Getter private final LGPlayer player;
 	@Getter private boolean shown;
-	
+
 	public CustomScoreboardEntry getLine(int index) {
 		return entries.get(index);
 	}
