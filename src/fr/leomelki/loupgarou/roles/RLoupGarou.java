@@ -173,7 +173,10 @@ public class RLoupGarou extends Role{
 		if(e.getGame() == getGame()) {
 			showSkins = false;
 			for(LGPlayer player : getPlayers())
-				player.updateOwnSkin();
+
+				//TODO updateSkin
+				//player.updateOwnSkin();
+				return;
 		}
 	}
 	@EventHandler
@@ -181,7 +184,9 @@ public class RLoupGarou extends Role{
 		if(e.getGame() == getGame()) {
 			showSkins = true;
 			for(LGPlayer player : getPlayers())
-				player.updateOwnSkin();
+				//TODO updateSkin
+				//player.updateOwnSkin();
+				return;
 		}
 	}
 	

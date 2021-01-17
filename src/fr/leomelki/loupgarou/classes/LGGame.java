@@ -753,12 +753,14 @@ public class LGGame implements Listener{
 		if(mayor != null && mayor.getPlayer().isOnline()) {
 			LGCustomItems.updateItem(mayor);
 			mayor.updateSkin();
-			mayor.updateOwnSkin();
+			// TODO - updateSkin
+			//mayor.updateOwnSkin();
 		}
 		if(latestMayor != null && latestMayor.getPlayer() != null && latestMayor.getPlayer().isOnline()) {
 			LGCustomItems.updateItem(latestMayor);
 			latestMayor.updateSkin();
-			latestMayor.updateOwnSkin();
+			// TODO UpdateSkin
+			//latestMayor.updateOwnSkin();
 		}
 	}
 	

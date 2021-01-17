@@ -22,9 +22,12 @@ import fr.leomelki.loupgarou.utils.VariableCache;
 import fr.leomelki.loupgarou.utils.VariousUtils;
 import lombok.Getter;
 import lombok.Setter;
+import net.minecraft.server.v1_16_R3.DimensionManager;
+import net.minecraft.server.v1_16_R3.EnumGamemode;
 import net.minecraft.server.v1_16_R3.PacketPlayOutRespawn;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
+import org.bukkit.WorldType;
 import org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
@@ -130,6 +133,7 @@ public class LGPlayer {
 		}
 		if(game.tryToJoin(this)) {
 			//To update the skin
+			//TODO update the skin
 			updateOwnSkin();
 			player.getPlayer().setWalkSpeed(0.2f);
 	//		sendMessage("§2Vous venez de rejoindre une partie de Loup-Garou. §aBon jeu!");
