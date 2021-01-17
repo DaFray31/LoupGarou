@@ -1,9 +1,9 @@
 package fr.leomelki.loupgarou.events;
 
-import lombok.Getter;
-import lombok.Setter;
 import fr.leomelki.loupgarou.classes.LGGame;
 import fr.leomelki.loupgarou.classes.LGPlayer;
+import lombok.Getter;
+import lombok.Setter;
 import org.bukkit.event.Cancellable;
 
 public class LGPyromaneGasoilEvent extends LGEvent implements Cancellable{

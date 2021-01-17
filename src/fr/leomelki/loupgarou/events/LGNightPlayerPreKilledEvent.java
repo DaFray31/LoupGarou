@@ -1,10 +1,10 @@
 package fr.leomelki.loupgarou.events;
 
-import lombok.Getter;
-import lombok.Setter;
 import fr.leomelki.loupgarou.classes.LGGame;
 import fr.leomelki.loupgarou.classes.LGPlayer;
 import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
+import lombok.Getter;
+import lombok.Setter;
 import org.bukkit.event.Cancellable;
 
 public class LGNightPlayerPreKilledEvent extends LGEvent implements Cancellable{

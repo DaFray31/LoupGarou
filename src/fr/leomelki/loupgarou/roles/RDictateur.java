@@ -11,7 +11,7 @@ import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
 import fr.leomelki.loupgarou.events.LGVoteEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
-
+import org.bukkit.craftbukkit.v1_16_R3.inventory.CraftInventoryCustom;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.EventHandler;

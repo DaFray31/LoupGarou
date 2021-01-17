@@ -1,10 +1,10 @@
 package fr.leomelki.loupgarou.events;
 
 import com.comphenix.protocol.wrappers.WrappedGameProfile;
-import lombok.Getter;
-import lombok.Setter;
 import fr.leomelki.loupgarou.classes.LGGame;
 import fr.leomelki.loupgarou.classes.LGPlayer;
+import lombok.Getter;
+import lombok.Setter;
 
 public class LGSkinLoadEvent extends LGEvent {
 

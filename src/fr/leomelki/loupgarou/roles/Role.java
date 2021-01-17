@@ -1,11 +1,11 @@
 package fr.leomelki.loupgarou.roles;
 
-import lombok.Getter;
-import lombok.Setter;
 import fr.leomelki.loupgarou.MainLg;
 import fr.leomelki.loupgarou.classes.LGCustomItems;
 import fr.leomelki.loupgarou.classes.LGGame;
 import fr.leomelki.loupgarou.classes.LGPlayer;
+import lombok.Getter;
+import lombok.Setter;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;

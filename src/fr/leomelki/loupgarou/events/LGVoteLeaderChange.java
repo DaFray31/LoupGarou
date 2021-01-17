@@ -1,9 +1,9 @@
 package fr.leomelki.loupgarou.events;
 
-import lombok.Getter;
 import fr.leomelki.loupgarou.classes.LGGame;
 import fr.leomelki.loupgarou.classes.LGPlayer;
 import fr.leomelki.loupgarou.classes.LGVote;
+import lombok.Getter;
 
 import java.util.ArrayList;
 

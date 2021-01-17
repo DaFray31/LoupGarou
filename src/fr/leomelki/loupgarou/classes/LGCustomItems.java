@@ -1,19 +1,15 @@
 package fr.leomelki.loupgarou.classes;
 
 
-
-
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import fr.leomelki.loupgarou.events.LGCustomItemChangeEvent;
 import fr.leomelki.loupgarou.roles.Role;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
 
 import java.util.ArrayList;
 import java.util.Collections;

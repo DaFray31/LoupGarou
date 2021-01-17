@@ -1,9 +1,9 @@
 package fr.leomelki.loupgarou.events;
 
-import lombok.Getter;
 import fr.leomelki.loupgarou.classes.LGGame;
 import fr.leomelki.loupgarou.classes.LGPlayer;
 import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
+import lombok.Getter;
 
 public class LGPlayerGotKilledEvent extends LGEvent {
 	public LGPlayerGotKilledEvent(LGGame game, LGPlayer killed, Reason reason, boolean endGame) {

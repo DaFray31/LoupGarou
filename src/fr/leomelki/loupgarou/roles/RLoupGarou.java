@@ -1,11 +1,11 @@
 package fr.leomelki.loupgarou.roles;
 
-import lombok.Getter;
 import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
 import fr.leomelki.loupgarou.classes.*;
 import fr.leomelki.loupgarou.classes.chat.LGChat;
 import fr.leomelki.loupgarou.events.*;
 import fr.leomelki.loupgarou.events.LGPlayerKilledEvent.Reason;
+import lombok.Getter;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 

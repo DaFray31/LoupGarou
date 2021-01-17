@@ -32,5 +32,14 @@
     <orderEntry type="library" name="Maven: com.comphenix.executors:BukkitExecutors:1.1-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.16" level="project" />
     <orderEntry type="library" name="Maven: org.spigotmc:spigot:1.16.4-R0.1-SNAPSHOT" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../dwnld/spigot-api-1.16.4-R0.1-20210114.220528-50.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

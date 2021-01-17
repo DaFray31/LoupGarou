@@ -1,8 +1,8 @@
 package fr.leomelki.loupgarou.classes.chat;
 
+import fr.leomelki.loupgarou.classes.LGPlayer;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import fr.leomelki.loupgarou.classes.LGPlayer;
 
 import java.util.HashMap;
 import java.util.Map.Entry;

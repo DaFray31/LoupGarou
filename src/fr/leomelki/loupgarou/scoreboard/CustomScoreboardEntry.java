@@ -2,11 +2,11 @@ package fr.leomelki.loupgarou.scoreboard;
 
 import com.comphenix.protocol.wrappers.EnumWrappers.ScoreboardAction;
 import com.comphenix.protocol.wrappers.WrappedChatComponent;
-import lombok.Getter;
-import lombok.Setter;
 import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardScore;
 import fr.leomelki.com.comphenix.packetwrapper.WrapperPlayServerScoreboardTeam;
 import fr.leomelki.loupgarou.utils.VariousUtils;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Arrays;
 

@@ -1,8 +1,8 @@
 package fr.leomelki.loupgarou.classes;
 
+import fr.leomelki.loupgarou.roles.Role;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import fr.leomelki.loupgarou.roles.Role;
 
 @RequiredArgsConstructor
 public class IndexedRole {

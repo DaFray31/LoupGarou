@@ -22,9 +22,10 @@ import fr.leomelki.loupgarou.utils.VariableCache;
 import fr.leomelki.loupgarou.utils.VariousUtils;
 import lombok.Getter;
 import lombok.Setter;
-
+import net.minecraft.server.v1_16_R3.PacketPlayOutRespawn;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
+import org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
